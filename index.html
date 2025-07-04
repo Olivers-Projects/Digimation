@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Digimation</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Digimation</h1>
+
+  <canvas id="canvas" width="256" height="192"></canvas>
+
+  <div>
+    <button id="brushBtn">Brush</button>
+    <button id="fillBtn">Fill</button>
+    <button id="eraserBtn">Eraser</button>
+    <button id="newProjectBtn">New Project</button>
+  </div>
+
+  <div style="margin-top:10px;">
+    FPS:
+    <input id="fpsInput" type="number" min="1" max="15" value="5" style="width: 50px;" />
+  </div>
+
+  <div style="margin-top:10px;">
+    <button id="playBtn">Play Animation</button>
+    <button id="exportGifBtn">Export GIF</button>
+    <button id="exportMp4Btn">Export MP4</button>
+    <button id="exportDgmBtn">Export .dgm</button>
+    <input type="file" id="importDgmInput" accept=".dgm" style="display:none" />
+    <button id="importDgmBtn">Import .dgm</button>
+  </div>
+
+  <div id="framesContainer" style="margin-top: 15px;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gif.js.optimized/dist/gif.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/whammy/whammy.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
